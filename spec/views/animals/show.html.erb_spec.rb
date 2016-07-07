@@ -1,11 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe "animals/show", type: :view do
-
-  let(:animal) { build :animal, :name => "Jeremy" }
-
   it "renders attributes in <p>" do
-    render animal
+    @animal = create(:animal, name: "Jeremy")
+    @facility = @animal.facility
+    @nearby_animals = []
+
+    render
+
     expect(rendered).to match(/Jeremy/)
   end
 end

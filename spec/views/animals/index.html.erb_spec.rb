@@ -8,6 +8,6 @@ RSpec.describe "animals/index", type: :view do
 
     render
 
-    assert_select "div.animal", count: 1
+    assert_select 'div.animal', count: 1
   end
 end

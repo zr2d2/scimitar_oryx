@@ -9,6 +9,6 @@ RSpec.describe "facilities/index", type: :view do
 
     render
 
-    assert_select "h3", text: "john", count: 1
+    assert_select 'h3', text: 'john', count: 1
   end
 end

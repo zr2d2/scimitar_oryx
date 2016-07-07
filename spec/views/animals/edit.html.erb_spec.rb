@@ -9,9 +9,9 @@ RSpec.describe "animals/edit", type: :view do
     render
 
     action = facility_animal_path(@facility, @animal)
-    method = "post"
-    assert_select "form[action=?][method=?]", action, method do
-      assert_select "input#animal_name[name=?]", "animal[name]"
+    method = 'post'
+    assert_select 'form[action=?][method=?]', action, method do
+      assert_select 'input#animal_name[name=?]', 'animal[name]'
     end
   end
 end

@@ -15,12 +15,12 @@ RSpec.describe AnimalsController, type: :routing do
 
     it 'routes to #show' do
       expect(get: '/facilities/1/animals/1').
-        to route_to('animals#show', :id => '1', facility_id: '1')
+        to route_to('animals#show', id: '1', facility_id: '1')
     end
 
     it 'routes to #edit' do
       expect(get: '/facilities/1/animals/1/edit').
-        to route_to('animals#edit', :id => '1', facility_id: '1')
+        to route_to('animals#edit', id: '1', facility_id: '1')
     end
 
     it 'routes to #create' do
@@ -30,17 +30,17 @@ RSpec.describe AnimalsController, type: :routing do
 
     it 'routes to #update via PUT' do
       expect(put: '/facilities/1/animals/1').
-        to route_to('animals#update', :id => '1', facility_id: '1')
+        to route_to('animals#update', id: '1', facility_id: '1')
     end
 
     it 'routes to #update via PATCH' do
       expect(patch: '/facilities/1/animals/1').
-        to route_to('animals#update', :id => '1', facility_id: '1')
+        to route_to('animals#update', id: '1', facility_id: '1')
     end
 
     it 'routes to #destroy' do
       expect(delete: '/facilities/1/animals/1').
-        to route_to('animals#destroy', :id => '1', facility_id: '1')
+        to route_to('animals#destroy', id: '1', facility_id: '1')
     end
 
   end
